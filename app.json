@@ -1,0 +1,30 @@
+{
+  "name": "node-animals-back-end",
+  "description": "",
+  "keywords": [
+    "node",
+    "postgres",
+    "type-orm",
+    "type-graphql",
+    "orm",
+    "graphql",
+    "typescript"
+  ],
+  "website": "",
+  "success_url": "/graphql",
+  "repository": "",
+  "env": {
+    "NODE_ENV": {
+      "description": "We want to run the app in production mode.",
+      "value": "production"
+    },
+    "YARN_PRODUCTION": {
+      "description": "We want to keep dev dependencies.",
+      "value": "false"
+    },
+    "AUTH_SECRET": {
+      "description": "Secret key used for generating JWT tokens.",
+      "generator": "secret"
+    }
+  }
+}

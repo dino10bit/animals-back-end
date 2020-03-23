@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  postgres:
+    image: postgres:10-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: animalsDb
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secretPassword
+    volumes:
+      - /var/lib/postgresql/data
+  postgresTestDB:
+    image: postgres:10-alpine
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_DB: animalsDb
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secretPassword
+    volumes:
+      - /var/lib/postgresql/data
