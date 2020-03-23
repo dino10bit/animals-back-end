@@ -2,7 +2,7 @@
 
  You can find the source code for the front-end [here](https://github.com/dino10bit/animals-front-end).
 
-#Demo:
+# Demo:
  See: https://youtu.be/Z7xB7vrn2yI
 
 ## Development
