@@ -35,11 +35,11 @@ const config = {
     createOptions: {
       expiresIn: parseInt(process.env.AUTH_TOKEN_EXPIRATION!, 10) || 60 * 60,
       algorithm: 'HS256',
-      issuer: `jwt-issuer`,
+      issuer: 'jwt-issuer',
     },
     verifyOptions: {
       algorithm: 'HS256',
-      issuer: `jwt-issuer`,
+      issuer: 'jwt-issuer',
     },
   },
 }

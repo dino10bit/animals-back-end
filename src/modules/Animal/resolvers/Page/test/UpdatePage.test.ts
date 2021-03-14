@@ -18,7 +18,7 @@ const updateAnimalQuery = `
   }
 `
 
-const requestUpdateAnimal = (data: { id: number; name: string; species: string }, jwtToken?: string) =>
+const requestUpdateAnimal = (data: { id: number; uri: string; name: string; species: string }, jwtToken?: string) =>
   gCall({
     source: updateAnimalQuery,
     variableValues: {
@@ -37,6 +37,7 @@ describe('[resolver] updateAnimal', () => {
   const newAnimalData = {
     name: 'new name',
     species: 'new species',
+    uri: '',
   }
 
   describe('when unauthorized', () => {

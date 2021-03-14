@@ -109,7 +109,7 @@ describe('[resolver] CreateAnimal', () => {
         user: {
           id: String(user.id),
           email: user.email,
-          Animals: [
+          animals: [
             {
               ...animalData,
               uri: expectedAnimalUri,
