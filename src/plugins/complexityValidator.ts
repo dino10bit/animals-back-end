@@ -1,4 +1,4 @@
-import { getComplexity, simpleEstimator, fieldConfigEstimator } from 'graphql-query-complexity'
+import { getComplexity, simpleEstimator } from 'graphql-query-complexity'
 import { GraphQLSchema, separateOperations } from 'graphql'
 import config from '~/config'
 import { logger } from '~/modules/Core/services/logger'
@@ -12,7 +12,7 @@ export const createComplexityValidator = (schema: GraphQLSchema) => ({
           ? separateOperations(document)[request.operationName]
           : document,
         variables: request.variables,
-        estimators: [fieldConfigEstimator(), simpleEstimator({ defaultComplexity: 1 })],
+        estimators: [simpleEstimator({ defaultComplexity: 1 })],
       })
 
       if (complexity >= config.server.maxQueryComplexity) {
