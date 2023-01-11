@@ -75,7 +75,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "boom": "^7.3.0",
-    "class-validator": "^0.13.1",
+    "class-validator": "^0.14.0",
     "cors": "^2.8.5",
     "dataloader": "^2.0.0",
     "dotenv": "^8.2.0",
